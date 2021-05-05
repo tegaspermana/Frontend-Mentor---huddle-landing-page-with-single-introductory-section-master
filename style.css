@@ -1,0 +1,194 @@
+/* Define var */
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* Body & Background */
+
+body {
+    background-color: var(--violet);
+}
+
+.bg-container {
+    max-width: 1440px;
+    min-height: 800px;
+    padding: 0;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: auto;
+    display: block;
+}
+
+/* Header   */
+
+.header img {
+    width: auto;
+}
+
+.header {
+    padding: 6% 47% 6% 10%;
+    ;
+}
+
+/* Left-Column */
+
+.mockup {
+    padding: 6% 10%;
+}
+
+/* Rigt-Column */
+
+.col-text {
+    text-align: center;
+    padding: 10% 13%;
+    /* padding-left: 7.5%; */
+    /* padding-top: 130px; */
+    padding-top: 7%;
+}
+
+h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 1.5;
+    margin-bottom: 2.5%;
+}
+
+.para-text {
+    margin: 2.5% 0;
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Footer */
+
+.socmed {
+    padding: 6.4% 0;
+}
+
+.socmed button {
+    margin: 0 10px;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1%;
+}
+
+.attribution a {
+    color: var(--soft-magenta);
+}
+
+/* Button Socmed */
+
+.BUTTON_HAO {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    height: 28px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: Brush Script MT;
+    width: 28px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: var(--violet);
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.BUTTON_HAO:hover {
+    background: var(--violet);
+    color: var(--soft-magenta);
+    border: solid var(--soft-magenta) 2px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+/* Button Register */
+
+.BUTTON_MHF {
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    height: 40px;
+    color: var(--violet);
+    font-family: "Poppins";
+    width: 200px;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0;
+    background-color: white;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+    border: solid white 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 2.5% 0
+}
+
+.BUTTON_MHF:hover {
+    background: var(--soft-magenta);
+    border: solid var(--soft-magenta) 1px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+/* Responsive Setting */
+
+@media (min-width: 768px) {
+    .header {
+        padding: 3% 80% 3% 5%;
+    }
+    .mockup {
+        padding: 3% 0;
+        margin-left: 5%;
+    }
+    .col-text {
+        max-width: 648px;
+        padding: 9% 0;
+        text-align: left;
+    }
+    h1 {
+        font-size: 40px;
+        padding: 0 25% 0 8%;
+    }
+    .para-text{
+        padding: 0 14% 0 8%;
+        font-size: 18px;
+    }
+    .BUTTON_HAO {
+      width: 42px;
+      height: 42px;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-container {
+        background: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+}
